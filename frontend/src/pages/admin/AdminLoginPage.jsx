@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { toast } from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import api from '../../api/axios';
+import logo from '../../assets/logo.png';
 
 export default function AdminLoginPage({ onLogin }) {
   const [form, setForm] = useState({ username: '', password: '' });
@@ -55,7 +56,7 @@ export default function AdminLoginPage({ onLogin }) {
             boxShadow: '0 0 40px rgba(168,143,94,0.18)',
           }}>🔐</div>
           <h1 style={{ fontSize: '1.9rem', marginBottom: 6 }}>
-            <span className="gold">Hôtel Paradis</span>
+            <span className="gold">Hôtel Dar El Jeld & Spa</span>
           </h1>
           <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
             Accès réservé — Administration
@@ -149,7 +150,7 @@ export default function AdminLoginPage({ onLogin }) {
         </div>
 
         <p style={{ textAlign: 'center', fontSize: '0.72rem', color: 'var(--text-muted)', marginTop: 20 }}>
-          © 2025 Hôtel Paradis — Accès restreint
+          © 2025 Hôtel Dar El Jeld & Spa — Accès restreint
         </p>
       </div>
     </div>

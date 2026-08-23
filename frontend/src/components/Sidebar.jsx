@@ -1,4 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 const NAV_ITEMS_CLIENT = [
   { path: '/dashboard', icon: '⬡', label: 'Accueil' },
@@ -25,7 +26,7 @@ export default function Sidebar({ client, open, onClose, onLogout }) {
     <aside className={`sidebar ${open ? 'open' : ''}`}>
       {/* Logo */}
       <div className="sidebar-logo">
-        <span className="hotel-name">✦ Hôtel Paradis</span>
+        <img src={logo} alt="Hôtel Dar El Jeld & Spa" className="sidebar-logo-img" />
         <span className="tagline">Client Experience Portal</span>
       </div>
 

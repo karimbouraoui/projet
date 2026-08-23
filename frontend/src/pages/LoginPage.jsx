@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { toast } from 'react-hot-toast';
 import api from '../api/axios';
+import logo from '../assets/logo.png';
 
 export default function LoginPage({ onLogin }) {
   const [form, setForm] = useState({ name: '', email: '', phone: '', roomNumber: '' });
@@ -59,16 +60,9 @@ export default function LoginPage({ onLogin }) {
       <div className="animate-fade" style={{ width: '100%', maxWidth: '480px', position: 'relative' }}>
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: 40 }}>
-          <div style={{
-            width: 72, height: 72, borderRadius: '50%',
-            background: 'linear-gradient(135deg, rgba(168, 143, 94, 0.2), rgba(168, 143, 94, 0.05))',
-            border: '1px solid rgba(168, 143, 94, 0.3)',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: '2rem', margin: '0 auto 20px',
-            boxShadow: '0 0 30px rgba(168, 143, 94, 0.2)',
-          }}>🏨</div>
+		<img src={logo} alt="Hôtel Dar El Jeld & Spa" style={{ width: 120, margin: '0 auto 20px', display: 'block' }} />
           <h1 style={{ fontSize: '2rem', marginBottom: 8 }}>
-            <span className="gold">Hôtel Paradis</span>
+            <span className="gold">Hôtel Dar El Jeld & Spa</span>
           </h1>
           <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>
             Portail client — Wi-Fi &amp; Services
@@ -120,7 +114,7 @@ export default function LoginPage({ onLogin }) {
         </div>
 
         <p style={{ textAlign: 'center', fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: 20 }}>
-          © 2025 Hôtel Paradis — Tous droits réservés
+          © 2025 Hôtel Dar El Jeld & Spa — Tous droits réservés
         </p>
       </div>
     </div>

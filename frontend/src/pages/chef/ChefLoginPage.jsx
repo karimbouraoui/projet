@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { toast } from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import api from '../../api/axios';
+import logo from '../../assets/logo.png';
 
 export default function ChefLoginPage({ onLogin }) {
   const [form, setForm] = useState({ username: '', password: '' });
@@ -54,7 +55,7 @@ export default function ChefLoginPage({ onLogin }) {
             <span className="gold">Espace Responsable</span>
           </h1>
           <p style={{ fontSize: '0.83rem', color: 'var(--text-muted)' }}>
-            Hôtel Paradis — Chefs de département
+            Hôtel Dar El Jeld & Spa — Chefs de département
           </p>
         </div>
 

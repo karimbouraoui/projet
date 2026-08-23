@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 export default function ChefLayout({ chef, onLogout }) {
   const [open, setOpen] = useState(false);
@@ -18,7 +19,7 @@ export default function ChefLayout({ chef, onLogout }) {
       <aside className={`sidebar ${open ? 'open' : ''}`}>
         {/* Logo */}
         <div className="sidebar-logo">
-          <span className="hotel-name">✦ Hôtel Paradis</span>
+          <img src={logo} alt="Hôtel Dar El Jeld & Spa" className="sidebar-logo-img" />
           <span className="tagline" style={{ color: 'var(--gold-light)', fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: 2 }}>
             {chef?.icon} {chef?.dept}
           </span>

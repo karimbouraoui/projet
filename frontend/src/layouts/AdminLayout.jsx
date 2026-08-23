@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 const ADMIN_NAV = [
   { path: '/admin/dashboard',   icon: '📊', label: 'Tableau de bord' },
@@ -23,7 +24,7 @@ export default function AdminLayout({ admin, onLogout }) {
 
       <aside className={`sidebar ${open ? 'open' : ''}`}>
         <div className="sidebar-logo">
-          <span className="hotel-name">✦ Hôtel Paradis</span>
+          <img src={logo} alt="Hôtel Dar El Jeld & Spa" className="sidebar-logo-img" />
           <span className="tagline" style={{ color: 'var(--gold)', fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: 2 }}>
             Administration
           </span>

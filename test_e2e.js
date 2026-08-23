@@ -64,7 +64,7 @@ async function runTests() {
   step(3, 'Blocage compte admin via portail client');
   try {
     const r = await request('POST', '/api/clients/login', {
-      name: 'Admin', email: 'admin@hotel-paradis.com',
+      name: 'Admin', email: 'admin@dareljeld.com',
       phone: '0000000000', roomNumber: 'ADMIN'
     });
     if (r.status === 403) pass(`Accès admin bloqué correctement (403)`);
@@ -231,7 +231,7 @@ async function runTests() {
   step(13, 'Liste clients — Admin absent');
   try {
     const r = await request('GET', '/api/clients');
-    const hasAdmin = r.body.some(g => g.roomNumber === 'ADMIN' || g.email === 'admin@hotel-paradis.com');
+    const hasAdmin = r.body.some(g => g.roomNumber === 'ADMIN' || g.email === 'admin@dareljeld.com');
     if (!hasAdmin) pass(`Admin absent de la liste clients ✓ (${r.body.length} client(s))`);
     else fail(`Admin encore présent dans la liste!`);
     r.body.forEach(g => info(`  → ${g.name} | Chambre ${g.roomNumber} | ${g.email}`));

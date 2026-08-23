@@ -11,16 +11,16 @@ const ADMIN_CREDENTIALS = {
 
 // Department chiefs mapping
 const DEPARTMENT_CHIEFS = {
-  'Climatisation':  { name: 'Chef Maintenance', email: 'maintenance@hotel-paradis.com', dept: 'Maintenance' },
-  'Plomberie':      { name: 'Chef Maintenance', email: 'maintenance@hotel-paradis.com', dept: 'Maintenance' },
-  'Électricité':    { name: 'Chef Maintenance', email: 'maintenance@hotel-paradis.com', dept: 'Maintenance' },
-  'TV':             { name: 'Chef Maintenance', email: 'maintenance@hotel-paradis.com', dept: 'Maintenance' },
-  'Wi-Fi':          { name: 'Chef Technique',   email: 'technique@hotel-paradis.com',   dept: 'Technique'   },
-  'Ménage':         { name: 'Chef Ménage',      email: 'menage@hotel-paradis.com',       dept: 'Ménage'      },
-  'Mini-bar':       { name: 'Chef Ménage',      email: 'menage@hotel-paradis.com',       dept: 'Ménage'      },
-  'Restauration':   { name: 'Chef Restauration',email: 'resto@hotel-paradis.com',        dept: 'Restauration'},
-  'Bruit':          { name: 'Chef Sécurité',    email: 'securite@hotel-paradis.com',     dept: 'Sécurité'    },
-  'Autre':          { name: 'Directeur',         email: 'direction@hotel-paradis.com',    dept: 'Direction'   },
+  'Climatisation':  { name: 'Chef Maintenance', email: 'maintenance@dareljeld.com', dept: 'Maintenance' },
+  'Plomberie':      { name: 'Chef Maintenance', email: 'maintenance@dareljeld.com', dept: 'Maintenance' },
+  'Électricité':    { name: 'Chef Maintenance', email: 'maintenance@dareljeld.com', dept: 'Maintenance' },
+  'TV':             { name: 'Chef Maintenance', email: 'maintenance@dareljeld.com', dept: 'Maintenance' },
+  'Wi-Fi':          { name: 'Chef Technique',   email: 'technique@dareljeld.com',   dept: 'Technique'   },
+  'Ménage':         { name: 'Chef Ménage',      email: 'menage@dareljeld.com',       dept: 'Ménage'      },
+  'Mini-bar':       { name: 'Chef Ménage',      email: 'menage@dareljeld.com',       dept: 'Ménage'      },
+  'Restauration':   { name: 'Chef Restauration',email: 'resto@dareljeld.com',        dept: 'Restauration'},
+  'Bruit':          { name: 'Chef Sécurité',    email: 'securite@dareljeld.com',     dept: 'Sécurité'    },
+  'Autre':          { name: 'Directeur',         email: 'direction@dareljeld.com',    dept: 'Direction'   },
 };
 
 // POST /api/admin/login

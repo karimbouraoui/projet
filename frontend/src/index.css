@@ -620,3 +620,9 @@ tbody td.primary { color: var(--text-primary); font-weight: 500; }
   border: 1px solid var(--border-card) !important;
   border-radius: var(--radius-sm) !important;
 }
+.sidebar-logo-img {
+  display: block;
+  max-width: 100px;
+  height: auto;
+  margin: 0 auto 4px;
+}

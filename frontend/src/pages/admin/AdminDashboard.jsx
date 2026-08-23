@@ -44,7 +44,7 @@ export default function AdminDashboard() {
       <div className="page-header">
         <div>
           <h2 className="page-title">📊 Tableau de bord</h2>
-          <p className="page-subtitle">Vue d'ensemble — Administration Hôtel Paradis</p>
+          <p className="page-subtitle">Vue d'ensemble — Administration Hôtel Dar El Jeld & Spa</p>
         </div>
         <button className="btn btn-secondary btn-sm" onClick={() => window.location.reload()}>
           🔄 Actualiser

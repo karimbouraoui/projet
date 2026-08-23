@@ -3,7 +3,7 @@ const router = express.Router();
 const Client = require('../models/Client');
 
 // Blocked emails/rooms reserved for admin
-const ADMIN_RESERVED = ['admin@hotel-paradis.com'];
+const ADMIN_RESERVED = ['admin@dareljeld.com'];
 const ADMIN_ROOMS    = ['ADMIN', 'admin'];
 
 // POST /api/clients/login — Client WiFi login / register

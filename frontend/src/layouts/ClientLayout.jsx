@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 const CLIENT_NAV = [
   { path: '/',               icon: '⬡',  label: 'Accueil' },
@@ -24,7 +25,7 @@ export default function ClientLayout({ client, onLogout }) {
 
       <aside className={`sidebar ${open ? 'open' : ''}`}>
         <div className="sidebar-logo">
-          <span className="hotel-name">✦ Hôtel Paradis</span>
+          <img src={logo} alt="Hôtel Dar El Jeld & Spa" className="sidebar-logo-img" />
           <span className="tagline">Espace Client</span>
         </div>
         <nav className="sidebar-nav">

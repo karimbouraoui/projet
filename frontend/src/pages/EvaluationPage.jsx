@@ -75,9 +75,9 @@ export default function EvaluationPage({ client }) {
               <span key={s} style={{ fontSize: '1.5rem', color: s <= ratings.overall ? 'var(--gold)' : 'var(--border)' }}>★</span>
             ))}
           </div>
-          <p>Votre avis nous aide à améliorer continuellement la qualité de nos services. Nous espérons vous revoir bientôt au Paradis.</p>
+          <p>Votre avis nous aide à améliorer continuellement la qualité de nos services. Nous espérons vous revoir bientôt au Dar El Jeld & Spa.</p>
           <div style={{ marginTop: 8, color: 'var(--gold)', fontSize: '0.9rem', fontWeight: 600 }}>
-            — L'équipe Hôtel Paradis
+            — L'équipe Hôtel Dar El Jeld & Spa
           </div>
         </div>
       </div>
